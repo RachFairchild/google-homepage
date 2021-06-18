@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--CSS styling-->
+<style>
+
+/* Google logo */
+
+    #mainlogo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: 50%;
+        margin: -200px 0 0 -136px;
+    }
+
+/* Search bar */
+
+    form {
+        background-color: transparent;
+        width: 600px;
+        height: 44px;
+        align-items: center;
+        display: flex;
+        flex: 100%;
+        flex-direction: row;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        margin: 180px 0 0 -295px;
+        border: 1px solid #dfe1e5;
+        border-radius: 50px;
+    }
+
+    form:hover {
+        box-shadow: 0px 1px 2px 1px rgb(236, 236, 236);
+    }
+
+    input {
+        all: unset;
+        font: 16px system-ui;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+    }
+
+
+    #searchbutton {
+        all: unset;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        /*margin-right: 600px;*/
+        margin-top: 2px;
+        z-index: 2;
+
+    }
+
+    svg {
+        color: rgb(136, 136, 136);
+        fill: currentColor;
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+
+    }
+
+/* Top Navbar*/
+
+    nav {
+        display: inline;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        display: inline;
+        color:rgb(65, 65, 65);
+        font-size: 14px;
+    }
+        
+    li a {
+        display: inline;
+        color:rgb(44, 44, 44);
+        padding: 10px 0 0 10px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+
+/*app button*/
+    #appbutton {
+        padding: 7px 7px 7px 7px;
+        margin: 3px 13px 0px 0px;
+        color:rgb(44, 44, 44)
+    }
+
+    #appbutton:hover {
+        text-decoration: none;
+        border-radius: 50%;
+        background-color:rgb(243, 243, 243)
+    }
+
+/*sign in button*/
+    #button1 {
+        float: right;
+        color: white;
+        background-color: rgb(66, 110, 255);
+        border: none;
+        padding: 8px 26px;
+        margin: 0px 10px 10px 20px;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: none;
+    }
+
+    #button1:hover {
+        box-shadow: 0px 1px 2px 1px rgb(164, 186, 255);;
+        background-color:rgb(82, 123, 255);
+
+    }
+
+    #button-googlesearch {
+        font-family: arial;
+        background-color:rgb(245, 245, 245);
+        border: none;
+        color: rgb(44, 44, 44);
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 2px 5px 2px 5px;
+        cursor: pointer;
+        padding: 10px 20px 10px 20px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 34.5%;
+        top: 50%;
+    }
+
+    #button-googlesearch:hover {
+        border: thin solid rgb(206, 206, 206);
+        box-shadow: 0px 1px 1px 0px rgb(218, 218, 218);;
+    }
+
+    #button-feelinglucky {
+        font-family: arial;
+        background-color:rgb(245, 245, 245);
+        border: none;
+        color: rgb(44, 44, 44);
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 20px 10px 20px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 50%;
+        top: 50.35%;
+    }
+
+    #button-feelinglucky:hover {
+        border: thin solid rgb(206, 206, 206);
+        box-shadow: 0px 1px 1px 0px rgb(218, 218, 218);;
+    }
+
+    #kidsresource {
+        text-decoration: none;
+        font-family: arial;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 33.5%;
+        right: 33%;
+        top: 60%;
+    }
+
+    a #kidsresource {
+        text-decoration: none;
+    }
+
+</style>
+</head>
+<body>
+
+<!--HTML begin-->
+<!-- Set up Google Web Fonts (AKA the app icon) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+<!--Top navigation bar-->
+    <nav>
+<!--Left list-->
+    <ul class="navlist1" style="font-family: arial, sans-serif;">
+
+    <!--About-->
+        <li id="textli"><a href="https://about.google">About</a></li>
+
+    <!--Store-->
+        <li id="textli"><a href="https://store.google.com">Store</a></li>
+    </ul>
+    </nav>
+
+<!--Right list-->
+<nav>
+    <ul class="navlist2" style="font-family: arial, sans-serif;">
+
+    <!--Sign in button-->
+        <li><button id="button1">Sign in</button></li>
+
+    <!--Apps icon button-->
+        <li><div id="appicon" style="float:right"><a href="https://about.google/intl/en/products/">
+            <span class="material-icons">apps</span></div></li>
+
+    <!--Images-->
+        <li style="float:right" id="textli"><a href="https://www.google.com/imghp">Images</a></li>
+
+    <!--Gmail-->
+        <li style="float:right" id="textli"><a href="https://mail.google.com">Gmail</a></li>
+    
+    </ul>
+    </nav>
+
+   
+
+<!--Google logo-->
+<div id="mainlogo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+</div>
+
+<!--Search bar-->
+<form id="searchbar" role="search">
+    <input type="search" id="query" name="q" placeholder="Search..."
+    aria-label="Search the internet">
+    <button id="searchbutton">
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"</svg>
+    </button>
+</form>
+
+<button type="submit" id="button-googlesearch">Google Search</button>
+
+<button type="submit" id="button-feelinglucky">I'm Feeling Lucky</button>
+
+<div id="kidsresource"><center>Help kids <a href="https://www.google.com/url?q=https://beinternetawesome.withgoogle.com/en_us">Be Internet Awesome</a> with new tools for educators</center></div>
+
+</body>
+</html>
